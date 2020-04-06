@@ -1,0 +1,21 @@
+class Program{
+
+  void towerOfHanoi(int n, int A, int B, int C){
+    if(n == 1){
+      callout("printf", n, A, C);
+      return;
+    }
+
+    towerOfHanoi(n-1, A, C, B);
+    callout("printf", n, A, C);
+    towerOfHanoi(n-1, B, A, C);
+  }
+
+  void main() {
+
+    int n;
+    callout("scanf", n);
+
+    towerOfHanoi(n, 1, 2, 3);
+  }
+}

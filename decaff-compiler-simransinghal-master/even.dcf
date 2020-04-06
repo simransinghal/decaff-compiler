@@ -1,0 +1,23 @@
+class Program{
+
+  int A[100];
+  void main() {
+
+    int Asize;
+    int i;
+    callout("scanf", Asize);
+
+    for i = 0, i < Asize {
+      callout("scanf", A[i]);
+      i = i + 1;
+    }
+
+    for i = 0, i < Asize {
+      if(A[i] % 2 == 0){
+        callout("printf", A[i]);
+      }
+      i = i + 1;
+    }
+
+  }
+}

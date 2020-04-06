@@ -1,0 +1,21 @@
+class Program{
+  void main() {
+
+    int val;
+    int i;
+    int flag;
+
+    callout("scanf", val);
+    flag = 1;
+
+    for i=2, i < val{
+      if(val % i == 0){
+        flag = 0;
+      }
+      i = i + 1;
+    }
+
+    callout("printf", flag);
+
+  }
+}
